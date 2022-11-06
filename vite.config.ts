@@ -7,4 +7,9 @@ export default defineConfig({
   server: {
     host: true,
   },
+  resolve: {
+    alias: {
+      "@/": `${__dirname}/src/`, // path.join(__dirname, "src/") でも可
+    },
+  }
 })
