@@ -1,8 +1,7 @@
-import { baseURL } from '@/config/constants';
 import Axios from 'axios'
 
 const axios = Axios.create({
-  baseURL,
+  baseURL: "https://httpbin.org/",
   headers: {}
 })
 

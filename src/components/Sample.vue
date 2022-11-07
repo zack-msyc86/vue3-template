@@ -1,4 +1,14 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+import { getTestData } from '@/externals/dummy'
+
+
+const data = ref({})
+getTestData().then(resp => {
+  data.value = resp.data
+})
+
+console.log(data)
 
 </script>
 
@@ -6,6 +16,7 @@
 <template>
   <article id="a9d409bf-ff38-4f61-b16a-15cac36a89cb" class="page sans">
     <header><h1 class="page-title">Impossible Differential Attack</h1></header>
+    <h2>{{ data.url }}</h2>
     <div class="page-body">
       <hr id="64a127fe-fe88-4e08-a934-d8781aa2e15a" />
       <ul id="bb24d190-9d59-4b13-adbd-cfeba0077b8a" class="bulleted-list">
