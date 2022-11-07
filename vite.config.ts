@@ -9,7 +9,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@/": `${__dirname}/src/`, // path.join(__dirname, "src/") でも可
+      "@/": `${__dirname}/src/`,
     },
   }
 })
