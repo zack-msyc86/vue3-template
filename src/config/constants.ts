@@ -1,1 +1,1 @@
-export const APIbaseURL = ""
+export const APIbaseURL = "https://asia-northeast1-praha-test.cloudfunctions.net/"
